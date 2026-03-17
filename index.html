@@ -3,47 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title of the Feature</title>
+    <title>MindMelody</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 
   </head>
 
   <body>
-    <section class="py-24 flex flex-col items-center justify-center text-center">
-    <h1 class="text-6xl font-extrabold text-slate-800">
-      Insert Title Here
-    </h1>
-  </section>
 
-   <ul>
-        <li><a href="#introduction">Introduction</a></li>
+    <nav>
+      <span class="nav-logo">Project<em> Website</em></span>
+      <ul class="nav-links">
+       <li><a href="#introduction">Introduction</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#design">Design</a></li>
         <li><a href="#about">About</a></li>
-    </ul>
+      </ul>
+    </nav>
 
-  <section id="introducion" class="py-24 flex items-center justify-center">
-    <div class="w-3/4 h-64 border-4 border-dashed border-slate-400 rounded-2xl flex items-center justify-center text-slate-500 text-xl">
-      Purposed Feature, problem statement, how it works
+    <section class="hero">
+      <p class="hero-eyebrow">Track 3 &nbsp;·&nbsp; Music & Health</p>
+      <h1>Mind<em>Melody</em></h1>
+      <p class="hero-desc">
+        A mobile application that supports mental health through guided music listening.
+      </p>
+    </section>
+
+  <section id="introducion">
+    <div intro-box>
+      <span class="section-label">Introduction</span>
+      <h2 class="problem-statement">
+        Mental health services are costly, have long wait times, and limited availability, preventing students from 
+        receiving the support they need.
+      </h2>
+      
+      <p class="goals-label">Why MindMelody?</p>
+      <div class="goals-list">
+        <div class="goal-item">
+          <p class="goal-title">Affordability</p>
+          <p class="goal-desc">No paywall for core features.</p>
+        </div>
+        <div class="goal-item">
+          <p class="goal-title">Privacy</p>
+          <p class="goal-desc">Compliant with HIPAA; all self-recorded data and user information are protected.</p>
+        </div>
+        <div class="goal-item">
+          <p class="goal-title">Personalized Experience</p>
+          <p class="goal-desc">Feelings change! Playlists are updated on a daily basis to constantly support your well-being.</p>
+        </div>
+      </div>
+
+      <div class="intro-divider"></div>
     </div>
   </section>
 
-  <section id="research" class="py-24 flex items-center justify-center bg-white">
-    <div class="w-3/4 h-80 border-4 border-dashed border-slate-400 rounded-2xl flex items-center justify-center text-slate-500 text-xl">
+  <section id="research">
+    <div class="placeholder-box">
       Research Process, findings, interviews
     </div>
   </section>
 
-  <section id="design" class="py-24 flex items-center justify-center">
-    <div class="w-3/4 h-96 border-4 border-dashed border-slate-400 rounded-2xl flex items-center justify-center text-slate-500 text-xl">
+  <section id="design">
+    <div class="placeholder-box">
       Design Process, wireframes, demo
     </div>
   </section>
 
-  <section id="about" class="py-24 flex items-center justify-center">
-    <div class="w-3/4 h-96 border-4 border-dashed border-slate-400 rounded-2xl flex items-center justify-center text-slate-500 text-xl">
+  <section id="about">
+    <div class="placeholder-box">
       About the team
     </div>
   </section>
