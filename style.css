@@ -291,6 +291,122 @@ section:not(.hero) {
   max-width: 480px;
 }
 
+.music-box {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
+
+.music-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.music-list li {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.music-list li::before {
+  content: '→';
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blush-dark);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.existing-solutions-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto 0;
+}
+
+.existing-solutions-container img {
+  width: 900px;
+  height: auto;
+}
+
+.existing-solutions-container p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.interviews {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.step1 {
+  font-family: 'Cormorant Garamond', serif;
+  flex: 0 0 auto;
+  max-width: 500px;     
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+
+.img-questions {
+  width: 700px;          
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.img-questions {
+  width: 700px;          
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.img-notes {
+  width: 180px;          
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.img-caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.img-caption p {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
