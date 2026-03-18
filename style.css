@@ -378,14 +378,6 @@ section:not(.hero) {
   flex-shrink: 0;
 }
 
-.img-questions {
-  width: 700px;          
-  height: auto;
-  object-fit: contain;
-  display: block;
-  flex-shrink: 0;
-}
-
 .img-notes {
   width: 180px;          
   height: auto;
@@ -405,6 +397,72 @@ section:not(.hero) {
   font-size: 0.9rem;
   text-align: center;
   color: var(--ink-soft);
+}
+
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.themes-grid .img-notes {
+  width: 100%;
+  height: auto;
+}
+
+.features-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+  margin-bottom: 1rem;
+}
+
+.feature-group {
+  flex: 1;
+  background-color: var(--blush); 
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 1rem;
+}
+
+.feature-group-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
+}
+
+.feature-list li::before {
+  content: '→';
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--blush-dark);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+  position: static;
 }
 
 @keyframes fadeUp {
