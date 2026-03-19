@@ -211,10 +211,11 @@ section:not(.hero) {
   font-size: 1.3rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--blush-dark);
-  font-weight: 500;
+  color: var(--ink-soft);
+  font-weight: 600;
   margin-bottom: 1rem;
   text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .goals-list {
@@ -404,6 +405,7 @@ section:not(.hero) {
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
   align-items: start;
+  margin-bottom: 1rem;
 }
 
 .themes-grid .img-notes {
@@ -432,6 +434,7 @@ section:not(.hero) {
   margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: var(--ink-soft);
 }
 
 .feature-list {
@@ -464,6 +467,53 @@ section:not(.hero) {
   flex-shrink: 0;
   position: static;
 }
+
+.figma-comp {
+  width: 350px;          
+  height: auto;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.mockup-screen {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.team-member p {
+  text-align: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+.team-member {
+  text-align: center;
+  border: 2px solid var(--blush-light);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.team-member img {
+  width: 100%;
+  height: 400px;        
+  object-fit: cover;    
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  border-top: 1px solid var(--blush-light);
+}
+
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
